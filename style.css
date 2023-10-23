@@ -1,0 +1,440 @@
+/* Normalizador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid white;
+}
+
+
+:root {
+    --color-primario: black;
+    --color-secundario: magenta;
+    --color-terciario: white;
+    --color-extra-: rgb(5, 5, 5);
+}
+
+/* Header y Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: var(--color-secundario);
+}
+
+.logo {
+    width: 4%;
+    text-align: right;
+}
+
+nav {
+    width: 92%;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: var(--color-terciario);
+    transition: all 0.3;
+}
+
+nav a {
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+/* Pagina Index */
+
+body {
+    background-image: url(./assets/images-Sprint1/imagebanner.jpg);
+    background-color: var(--color-extra-);
+    background-blend-mode: soft-light;
+}
+
+main {
+    padding-bottom: 3rem;
+    min-height: 80vh;
+    color: var(--color-secundario);
+}
+
+
+#banner {
+    display: flex;
+    width: 100%;
+    height: 34vh;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--color-secundario);
+    text-shadow: var(--color-secundario);
+}
+
+.textoEimagen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: contain;
+    
+}
+
+.textoEimagen>img {
+    width: 20vw;
+    border-radius: 2rem;
+}
+
+.textoEimagen>p {
+    width: 40vw;
+    text-shadow: var(--color-secundario);
+}
+
+/* pagina About */
+
+.aboutUsTexImg {
+    display: flex;
+    width: 100vw;
+    gap: 5vh;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.imagentexto2,
+.imagentexto3,
+.imagentexto4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    width: 50vw;
+}
+
+.imagentexto2>img,
+.imagentexto3>img,
+.imagentexto4>img {
+    width: 40vh;
+    border-radius: 2rem;
+}
+
+.imagetexto2>p,
+.imagetexto3>p,
+.imagetexto4>p {
+    width: 15vw;
+    text-shadow: var(--color-secundario);
+}
+
+
+
+/* Pagina de Contact */
+.ContactImgTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ContactImgTexto img {
+    width: 70vw;
+    border-radius: 3rem;
+
+}
+
+.ContactImgTexto p {
+    text-align: center;
+    text-shadow: var(--color-secundario);
+}
+
+.EmailsTel {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    background-blend-mode: soft-light;
+}
+
+.EmailsTel a {
+    text-align: center;
+    border: 1rem solid var(--color-secundario);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--color-secundario);
+    background-blend-mode: soft-light;
+}
+
+
+/*Pagina  Service */
+
+.Tservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secundario);
+    border-collapse: collapse;
+}
+
+table {
+    text-align: center;
+}
+
+table :hover {
+    transform: scale(1);
+    color: var(--color-terciario);
+    transition: all 0.3;
+}
+
+tr,
+th,
+td {
+    width: 8rem;
+    height: 5rem;
+}
+
+/* Pagina Rating */
+
+.lista1,
+.lista2 {
+    width: 70vw;
+    height: 30vh;
+    border: 3px solid var(--color-secundario);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5rem;
+    background-blend-mode: soft-light;
+    color: var(--color-secundario);
+}
+
+.ulImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulImg>img:hover {
+    background-color: var(--color-secundario);
+    border-radius: 2rem;
+}
+
+.lista1 img,
+.lista2 img {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+p {
+    text-align: center;
+}
+
+/* Pagina Hire */
+
+.hire {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    border-radius: 2rem;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    border: 2rem solid var(--color-secundario);
+    border-radius: 2rem;
+}
+
+iframe {
+    border-radius: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+    border: 2px solid var(--color-secundario);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    border-style: none;
+    display: flex;
+    flex-direction: initial;
+    gap: 1vh;
+}
+
+
+
+/* Footer General */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+}
+
+footer p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Show data pagina */
+
+#showd table {
+    margin: 1 auto;
+    color: var(--color-secundario);
+}
+
+@media only screen and (max-width:1023px) {
+    header {
+        flex-direction: column-reverse;
+        height: 60vh;
+        position: static;
+    }
+
+    .logo{
+        width: 15vw;
+    }
+
+    nav a{
+        margin: 0.2rem;
+        flex-direction: column;
+        font-size: 1.2rem;
+        border: 0.3rem solid var(--color-primario);
+        border-radius: 1rem;
+        color: var(--color-secundario);
+        background-color: rgb(4, 4, 4);
+        background-blend-mode: soft-light;
+    }
+
+    #banner {
+        width: 100vw;
+        height: 15vh;
+        object-fit: cover;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* Pagina Index Home */
+    .textoEimagen {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    /* Pagina Aboutus */
+
+    .aboutUsTexImg,
+    .imagentexto2,
+    .imagentexto3,
+    .imagentexto4 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .imagentexto2>img,
+    .imagentexto3>img,
+    .imagentexto4>img {
+        width: 50vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    /* Pagina Contact */
+
+    .EmailsTel {
+        flex-direction: wrap;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--color-primario);
+    }
+
+    .ContactImgTexto>img {
+        width: 60vh;
+    }
+
+    /* Pagina Rating */
+
+    .lista1, .lista2{
+        width: 80vw;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista1>img,
+    .lista2>img {
+        width: 30vw;
+    }
+
+    .ulImg>ul {
+        width: 60vw;
+
+    }
+    .stars{
+        width: 5vw;
+        height: 10vh;
+    }
+
+    
+    /* Pagina Service */
+
+    .Tservice {
+        align-items: center;
+        width: 100vw;
+    }
+
+    /* Pagina Hire */
+
+    .hire{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    iframe{
+        width: 80vw;
+    }
+
+    /* footer {
+        position: sticky;
+        bottom: 0;
+        */
+
+}

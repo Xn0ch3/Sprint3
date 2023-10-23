@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images-Sprint1/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Hire MindyPh</title>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="menu">Home</a>
+            <a href="aboutUs.html" class="menu">AboutUs</a>
+            <a href="contact.html" class="menu">Contact</a>
+            <a href="services.html" class="menu">Service</a>
+            <a href="rating.html" class="menu">Rating</a>
+            <a href="hire.html" class="menu">Hire</a>
+        </nav>
+        <img src="/assets/images-Sprint1/logo.png" alt="logoMindyPhoto" class="logo">
+    </header>
+
+    <main>
+        <h1>Hire</h1>
+        <h2>Fill out the form so we can attend your event</h2>
+
+        <div class="hire">
+
+            <div class="Maps">
+                <p>Our Location</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442283438!2d-118.74140053903372!3d34.020608443453526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1697746389600!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form">
+                <form action="../showdata/show_data.html" method="get" target="_blank">
+
+                    <label for="FullName">First Name and Last Name</label>
+                    <input type="text" name="FullName" id="firsn">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="Phone" id="phone">
+
+                    <label for="Choose_Service">Choose Service</label>
+                    <select name="Service" id="Choose_Service">
+                        <option value="Wedding">weddings</option>
+                        <option value="Birhtday">Birhtday</option>
+                        <option value="Kids_Birtdays">Kids Birtdays</option>
+                        <option value="Photo_Studio/Outside">Photo Studio/Outside</option>
+                    </select>
+
+                    <label for="Choose_Date">Choose Date</label>
+                    <input type="datetime-local" name="Date" id="Choose_date">
+
+                    <fieldset>
+                        <label class="payment">Payment Options
+
+                            <div>
+                                <input type="radio" name="payment" id="cash" value="cash">
+                                <label for="cash">Cash</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="credit-card" value="credit-card">
+                                <label for="credit-card">Credit Card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="debit-card" value="debit-card">
+                                <label for="debit-card">Debit Card</label>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <label>Message (Location and Time)</label>
+                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                    <label for="iacep">
+                        <input type="checkbox" name="i_acept" id="iacep"> I accept terms and conditions...
+                    </label>
+                    <input type="submit" value="Send">
+
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footerX">
+        <p>Create By: Xavier Nochelli</p>
+    </footer>
+
+</body>
+
+</html>
